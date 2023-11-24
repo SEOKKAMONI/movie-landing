@@ -2,6 +2,10 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import Logo from "./Icons/Logo";
 
 const ContactSection = () => {
+  const handleGoEmail = () => {
+    window.open("mailto: gyeom@oriro.kr");
+  };
+
   return (
     <Box
       display="flex"
@@ -32,6 +36,7 @@ const ContactSection = () => {
         </Flex>
         <Box
           as="span"
+          onClick={handleGoEmail}
           display="flex"
           justifyContent="center"
           alignItems="center"

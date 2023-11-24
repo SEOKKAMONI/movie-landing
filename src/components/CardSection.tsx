@@ -12,7 +12,7 @@ const CardSection = () => {
       width="100%"
     >
       {/* 카드 1 */}
-      <Flex gap="64px" alignItems="flex-start" marginBottom="280px">
+      <Flex gap="64px" alignItems="flex-start" marginBottom="250px">
         <Image
           src="/images/card-sample.png"
           width={320}
@@ -59,6 +59,7 @@ const CardSection = () => {
             fontWeight={400}
             color="black"
             height="36px"
+            _hover={{ cursor: "pointer" }}
           >
             VIEW MORE
           </Box>
@@ -106,6 +107,7 @@ const CardSection = () => {
             fontWeight={400}
             color="black"
             height="36px"
+            _hover={{ cursor: "pointer" }}
           >
             VIEW MORE
           </Box>

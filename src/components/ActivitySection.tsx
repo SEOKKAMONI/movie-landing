@@ -1,11 +1,13 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useMediaQuery } from "@chakra-ui/react";
 import Logo from "./Icons/Logo";
 import Image from "next/image";
 
 const ActivitySection = () => {
+  const [isLagerThan1440] = useMediaQuery("(min-width: 1440px)");
+
   return (
     <Box
-      display="flex"
+      display={isLagerThan1440 ? "none" : "flex"}
       gap="30px"
       justifyContent="center"
       alignItems="center"

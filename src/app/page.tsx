@@ -5,6 +5,7 @@ import CardSection from "@/components/CardSection";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Logo from "@/components/Icons/Logo";
+import WordSection from "@/components/WordSection";
 import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -13,12 +14,14 @@ const Home = () => {
     <>
       <Header />
       <Box width="100vw">
-        {/* 히어로 페이지 */}
+        {/* 히어로 섹션 */}
         <HeroSection />
-        {/* 카드 페이지 */}
+        {/* 카드 섹션 */}
         <CardSection />
-        {/* 활동 페이지 */}
+        {/* 활동 섹션 */}
         <ActivitySection />
+        {/* 한 마디 섹션 */}
+        <WordSection />
       </Box>
     </>
   );

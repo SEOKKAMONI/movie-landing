@@ -21,7 +21,12 @@ const ContactSection = () => {
       >
         <Flex alignItems="center" justifyContent="center">
           <Logo color="black" width="160px" height="28px" />
-          <Text fontSize="36px" fontWeight={600} color="black">
+          <Text
+            fontSize="36px"
+            fontWeight={600}
+            color="black"
+            letterSpacing={-1.08}
+          >
             는 여러분의 연락을 기다리고 있습니다
           </Text>
         </Flex>

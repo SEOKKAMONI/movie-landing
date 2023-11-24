@@ -25,6 +25,7 @@ const CardSection = () => {
             fontWeight={500}
             color="#7D7D7D"
             marginBottom="16px"
+            letterSpacing={-0.6}
           >
             Title1
           </Text>
@@ -33,6 +34,7 @@ const CardSection = () => {
             fontWeight={600}
             color="black"
             marginBottom="36px"
+            letterSpacing={-1.08}
           >
             This is Title
             <br /> Lorem Ipsum
@@ -42,6 +44,8 @@ const CardSection = () => {
             fontWeight={400}
             color="#7D7D7D"
             marginBottom="64px"
+            lineHeight="150%"
+            letterSpacing={-0.48}
           >
             Lorem ipsum dolor sit amet consectetur.
             <br /> Viverra at urna natoque sed commodo.
@@ -74,6 +78,7 @@ const CardSection = () => {
             fontWeight={500}
             color="#7D7D7D"
             marginBottom="16px"
+            letterSpacing={-0.6}
           >
             Title1
           </Text>
@@ -82,6 +87,7 @@ const CardSection = () => {
             fontWeight={600}
             color="black"
             marginBottom="36px"
+            letterSpacing={-1.08}
           >
             This is Title
             <br /> Lorem Ipsum
@@ -91,6 +97,8 @@ const CardSection = () => {
             fontWeight={400}
             color="#7D7D7D"
             marginBottom="64px"
+            lineHeight="150%"
+            letterSpacing={-0.48}
           >
             Lorem ipsum dolor sit amet consectetur.
             <br /> Viverra at urna natoque sed commodo.

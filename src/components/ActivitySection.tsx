@@ -44,6 +44,7 @@ const ActivitySection = () => {
             fontWeight={500}
             color="#7D7D7D"
             marginBottom="16px"
+            letterSpacing={-0.72}
           >
             Title6
           </Text>
@@ -52,11 +53,17 @@ const ActivitySection = () => {
             fontWeight={600}
             color="black"
             marginBottom="48px"
+            letterSpacing={-1.92}
           >
             This is Title
             <br /> Lorem Ipsum
           </Text>
-          <Text fontSize="16px" fontWeight={400} color="#7D7D7D">
+          <Text
+            fontSize="16px"
+            fontWeight={400}
+            color="#7D7D7D"
+            letterSpacing={-0.48}
+          >
             Lorem ipsum dolor sit amet consectetur.
             <br /> Viverra at urna natoque sed commodo.
             <br /> Cursus neque a integer a felis felis.

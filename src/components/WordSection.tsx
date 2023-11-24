@@ -17,6 +17,8 @@ const WordSection = () => {
         fontSize="110px"
         fontWeight={400}
         color="white"
+        lineHeight="100px"
+        letterSpacing={-3.3}
       >
         This is
         <br /> Lorem Ipsum

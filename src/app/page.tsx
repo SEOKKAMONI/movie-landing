@@ -2,6 +2,7 @@
 
 import ActivitySection from "@/components/ActivitySection";
 import CardSection from "@/components/CardSection";
+import ContactSection from "@/components/ContactSection";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Logo from "@/components/Icons/Logo";
@@ -22,6 +23,8 @@ const Home = () => {
         <ActivitySection />
         {/* 한 마디 섹션 */}
         <WordSection />
+        {/* 컨택 섹션 */}
+        <ContactSection />
       </Box>
     </>
   );

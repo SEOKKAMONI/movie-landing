@@ -12,7 +12,7 @@ const Footer = () => {
       alignItems="flex-start"
       padding="64px 100px 38px 100px"
       width="100vw"
-      backgroundColor="black"
+      backgroundcolor="353d4a"
     >
       <Flex flexDirection="column" alignItems="flex-start" marginRight="150px">
         <Logo color="white" width="183px" height="32px" />
@@ -57,6 +57,7 @@ const Footer = () => {
         fontWeight={600}
         color="white"
         letterSpacing={-1.08}
+        lineHeight="150%"
       >
         We are the proof of your
         <br />

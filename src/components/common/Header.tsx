@@ -18,14 +18,14 @@ const Header = () => {
       <Flex gap="16px" alignItems="center">
         <Link
           color="rgba(255, 255, 255, 0.50)"
-          _hover={{ border: "none", color: "#FFF" }}
+          _hover={{ border: "none", color: "#FFF", cursor: "pointer" }}
         >
           KOR
         </Link>
         <Text color="rgba(255, 255, 255, 0.50)">|</Text>
         <Link
           color="rgba(255, 255, 255, 0.50)"
-          _hover={{ border: "none", color: "white" }}
+          _hover={{ border: "none", color: "white", cursor: "pointer" }}
         >
           ENG
         </Link>

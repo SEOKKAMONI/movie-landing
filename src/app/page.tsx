@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Box width="100vw">
+      <Box width="100vw" margin={0} padding={0}>
         {/* 히어로 섹션 */}
         <HeroSection />
         {/* 카드 섹션 */}

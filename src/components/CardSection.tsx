@@ -21,18 +21,10 @@ const CardSection = () => {
         />
         <Flex flexDirection="column" alignItems="flex-start" paddingTop="36px">
           <Text
-            fontSize="20px"
-            fontWeight={500}
-            color="#7D7D7D"
-            marginBottom="16px"
-            letterSpacing={-0.6}
-          >
-            Title1
-          </Text>
-          <Text
             fontSize="36px"
+            lineHeight="130%"
             fontWeight={600}
-            color="black"
+            color="353d4a"
             marginBottom="36px"
             letterSpacing={-1.08}
           >
@@ -51,41 +43,16 @@ const CardSection = () => {
             <br /> Viverra at urna natoque sed commodo.
             <br /> Cursus neque a integer a felis felis.
           </Text>
-          <Box
-            as="span"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            paddingLeft="32px"
-            paddingRight="32px"
-            border="1px solid"
-            borderColor="black"
-            fontSize="14px"
-            fontWeight={400}
-            color="black"
-            height="36px"
-            _hover={{ cursor: "pointer" }}
-          >
-            VIEW MORE
-          </Box>
         </Flex>
       </Flex>
       {/* 카드 2 */}
       <Flex gap="64px" alignItems="flex-start">
         <Flex flexDirection="column" alignItems="flex-start" paddingTop="36px">
           <Text
-            fontSize="20px"
-            fontWeight={500}
-            color="#7D7D7D"
-            marginBottom="16px"
-            letterSpacing={-0.6}
-          >
-            Title1
-          </Text>
-          <Text
+            lineHeight="130%"
             fontSize="36px"
             fontWeight={600}
-            color="black"
+            color="353d4a"
             marginBottom="36px"
             letterSpacing={-1.08}
           >
@@ -97,30 +64,12 @@ const CardSection = () => {
             fontWeight={400}
             color="#7D7D7D"
             marginBottom="64px"
-            lineHeight="150%"
             letterSpacing={-0.48}
           >
             Lorem ipsum dolor sit amet consectetur.
             <br /> Viverra at urna natoque sed commodo.
             <br /> Cursus neque a integer a felis felis.
           </Text>
-          <Box
-            as="span"
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            paddingLeft="32px"
-            paddingRight="32px"
-            border="1px solid"
-            borderColor="black"
-            fontSize="14px"
-            fontWeight={400}
-            color="black"
-            height="36px"
-            _hover={{ cursor: "pointer" }}
-          >
-            VIEW MORE
-          </Box>
         </Flex>
         <Image
           src="/images/card-sample.png"

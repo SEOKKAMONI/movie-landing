@@ -30,7 +30,7 @@ const ActivitySection = () => {
           width="500px"
           height="400px"
         >
-          <Logo color="black" width="183px" height="32px" />
+          <Logo color="353d4a" width="183px" height="32px" />
         </Box>
         <Box
           display="flex"
@@ -40,19 +40,11 @@ const ActivitySection = () => {
           height="400px"
         >
           <Text
-            fontSize="24px"
-            fontWeight={500}
-            color="#7D7D7D"
-            marginBottom="16px"
-            letterSpacing={-0.72}
-          >
-            Title6
-          </Text>
-          <Text
             fontSize="64px"
             fontWeight={600}
-            color="black"
+            color="353d4a"
             marginBottom="48px"
+            lineHeight="150%"
             letterSpacing={-1.92}
           >
             This is Title

@@ -1,8 +1,10 @@
 import { Box, Text, useMediaQuery } from "@chakra-ui/react";
 import Logo from "./Icons/Logo";
 import Image from "next/image";
+import { useIsKorea } from "@/store/useIsKorea";
 
 const ActivitySection = () => {
+  const { isKorea } = useIsKorea();
   const [isLagerThan1920] = useMediaQuery("(min-width: 1920px)");
 
   return (
@@ -42,13 +44,22 @@ const ActivitySection = () => {
           <Text
             fontSize="64px"
             fontWeight={600}
-            color="353d4a"
+            color="#353d4a"
             marginBottom="48px"
             lineHeight="150%"
             letterSpacing={-1.92}
           >
-            This is Title
-            <br /> Lorem Ipsum
+            {isKorea ? (
+              <p>
+                토스 평생 무료송금으로
+                <br /> 모두의 금융에 자유를
+              </p>
+            ) : (
+              <p>
+                This is Title
+                <br /> Lorem Ipsum
+              </p>
+            )}
           </Text>
           <Text
             fontSize="16px"
@@ -56,9 +67,19 @@ const ActivitySection = () => {
             color="#7D7D7D"
             letterSpacing={-0.48}
           >
-            Lorem ipsum dolor sit amet consectetur.
-            <br /> Viverra at urna natoque sed commodo.
-            <br /> Cursus neque a integer a felis felis.
+            {isKorea ? (
+              <p>
+                누구에게 보내든 은행 상관 없이,
+                <br />
+                이제 토스와 함께 수수료 걱정 없이 송금하세요.
+              </p>
+            ) : (
+              <p>
+                Lorem ipsum dolor sit amet consectetur.
+                <br /> Viverra at urna natoque sed commodo.
+                <br /> Cursus neque a integer a felis felis.
+              </p>
+            )}
           </Text>
         </Box>
         <Image

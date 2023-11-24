@@ -1,7 +1,10 @@
 import { Box, Flex, Link, Spacer, Text } from "@chakra-ui/react";
 import Logo from "../Icons/Logo";
+import { useIsKorea } from "@/store/useIsKorea";
 
 const Header = () => {
+  const { isKorea, setIsKorea } = useIsKorea();
+
   return (
     <Box
       position="absolute"
@@ -17,14 +20,16 @@ const Header = () => {
       <Logo color="white" width="137px" height="22px" />
       <Flex gap="16px" alignItems="center">
         <Link
-          color="rgba(255, 255, 255, 0.50)"
+          onClick={() => setIsKorea(true)}
+          color={isKorea ? "white" : "rgba(255, 255, 255, 0.50)"}
           _hover={{ border: "none", color: "#FFF", cursor: "pointer" }}
         >
           KOR
         </Link>
         <Text color="rgba(255, 255, 255, 0.50)">|</Text>
         <Link
-          color="rgba(255, 255, 255, 0.50)"
+          onClick={() => setIsKorea(false)}
+          color={!isKorea ? "white" : "rgba(255, 255, 255, 0.50)"}
           _hover={{ border: "none", color: "white", cursor: "pointer" }}
         >
           ENG

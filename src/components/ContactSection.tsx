@@ -1,7 +1,10 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Logo from "./Icons/Logo";
+import { useIsKorea } from "@/store/useIsKorea";
 
 const ContactSection = () => {
+  const { isKorea } = useIsKorea();
+
   const handleGoEmail = () => {
     window.open("mailto: gyeom@oriro.kr");
   };
@@ -31,7 +34,11 @@ const ContactSection = () => {
             color="black"
             letterSpacing={-1.08}
           >
-            는 여러분의 연락을 기다리고 있습니다
+            {isKorea ? (
+              <span>는 여러분의 연락을 기다리고 있습니다</span>
+            ) : (
+              <span>is waiting to hear from you</span>
+            )}
           </Text>
         </Flex>
         <Box
@@ -50,7 +57,7 @@ const ContactSection = () => {
           color="white"
           _hover={{ cursor: "pointer" }}
         >
-          연락하기
+          {isKorea ? <span>연락하기</span> : <span>Contact</span>}
         </Box>
       </Flex>
     </Box>

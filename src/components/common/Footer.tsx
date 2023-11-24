@@ -12,7 +12,7 @@ const Footer = () => {
       alignItems="flex-start"
       padding="64px 100px 38px 100px"
       width="100vw"
-      backgroundcolor="353d4a"
+      backgroundColor="black"
     >
       <Flex flexDirection="column" alignItems="flex-start" marginRight="150px">
         <Logo color="white" width="183px" height="32px" />
@@ -20,7 +20,7 @@ const Footer = () => {
           fontSize="16px"
           fontWeight={500}
           marginTop="20px"
-          color="white"
+          color="#f9fafb"
           letterSpacing={-0.48}
         >
           오리오 스튜디오
@@ -29,7 +29,7 @@ const Footer = () => {
           fontSize="16px"
           fontWeight={500}
           marginTop="48px"
-          color="white"
+          color="#f9fafb"
           letterSpacing={-0.48}
         >
           gyeom@oriro.kr
@@ -39,7 +39,7 @@ const Footer = () => {
         <Text
           fontSize="16px"
           fontWeight={500}
-          color="white"
+          color="#f9fafb"
           letterSpacing={-0.48}
         >
           FOLLOW US
@@ -55,9 +55,8 @@ const Footer = () => {
       <Text
         fontSize="36px"
         fontWeight={600}
-        color="white"
+        color="#f9fafb"
         letterSpacing={-1.08}
-        lineHeight="150%"
       >
         We are the proof of your
         <br />

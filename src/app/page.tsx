@@ -5,17 +5,15 @@ import CardSection from "@/components/CardSection";
 import ContactSection from "@/components/ContactSection";
 import Header from "@/components/common/Header";
 import HeroSection from "@/components/HeroSection";
-import Logo from "@/components/Icons/Logo";
 import WordSection from "@/components/WordSection";
-import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box } from "@chakra-ui/react";
 import Footer from "@/components/common/Footer";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <Box width="100vw" margin={0} padding={0}>
+      <Box width="100vw" margin={0} padding={0} backgroundColor="#f9fafb">
         {/* 히어로 섹션 */}
         <HeroSection />
         {/* 카드 섹션 */}

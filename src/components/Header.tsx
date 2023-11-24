@@ -14,7 +14,7 @@ const Header = () => {
       width="100%"
     >
       <Box width="100.2px" />
-      <Logo />
+      <Logo color="white" width="137px" height="22px" />
       <Flex gap="16px" alignItems="center">
         <Link
           color="rgba(255, 255, 255, 0.50)"

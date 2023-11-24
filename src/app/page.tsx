@@ -1,6 +1,7 @@
 "use client";
 
 import Header from "@/components/Header";
+import Logo from "@/components/Icons/Logo";
 import { Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
@@ -16,6 +17,7 @@ const Home = () => {
           width="100%"
           height="100vh"
         />
+        {/* 카드 페이지 */}
         <Box
           display="flex"
           flexDirection="column"
@@ -24,7 +26,7 @@ const Home = () => {
           paddingBottom="220px"
           width="100%"
         >
-          {/* Card 1 */}
+          {/* 카드 1 */}
           <Flex gap="64px" alignItems="flex-start" marginBottom="280px">
             <Image
               src="/images/card-sample.png"
@@ -81,7 +83,7 @@ const Home = () => {
               </Box>
             </Flex>
           </Flex>
-          {/* Card 2 */}
+          {/* 카드 2 */}
           <Flex gap="64px" alignItems="flex-start">
             <Flex
               flexDirection="column"
@@ -138,6 +140,82 @@ const Home = () => {
               alt="Card"
             />
           </Flex>
+          {/* 활동 페이지 */}
+          <Box
+            display="flex"
+            gap="30px"
+            justifyContent="center"
+            alignItems="center"
+            marginBottom="220px"
+            marginTop="220px"
+            width="100%"
+          >
+            <Box
+              display="grid"
+              gridTemplateColumns="repeat(2, 0fr)"
+              columnGap="30px"
+              paddingLeft="100px"
+              paddingRight="100px"
+            >
+              <Image
+                src="/images/activity-sample-1.png"
+                width={500}
+                height={400}
+                alt="Activity 1"
+              />
+              <Box
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+                width="500px"
+                height="400px"
+              >
+                <Logo color="black" width="183px" height="32px" />
+              </Box>
+              <Box
+                display="flex"
+                flexDirection="column"
+                justifyContent="flex-end"
+                width="500px"
+                height="400px"
+              >
+                <Text
+                  fontSize="24px"
+                  fontWeight={500}
+                  color="#7D7D7D"
+                  marginBottom="16px"
+                >
+                  Title6
+                </Text>
+                <Text
+                  fontSize="64px"
+                  fontWeight={600}
+                  color="black"
+                  marginBottom="48px"
+                >
+                  This is Title
+                  <br /> Lorem Ipsum
+                </Text>
+                <Text fontSize="16px" fontWeight={400} color="#7D7D7D">
+                  Lorem ipsum dolor sit amet consectetur.
+                  <br /> Viverra at urna natoque sed commodo.
+                  <br /> Cursus neque a integer a felis felis.
+                </Text>
+              </Box>
+              <Image
+                src="/images/activity-sample-1.png"
+                width={500}
+                height={400}
+                alt="Activity 1"
+              />
+            </Box>
+            <Image
+              src="/images/activity-sample-2.png"
+              width={660}
+              height={800}
+              alt="Activity 2"
+            />
+          </Box>
         </Box>
       </Box>
     </>

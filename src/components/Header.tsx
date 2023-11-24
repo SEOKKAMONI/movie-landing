@@ -4,8 +4,8 @@ import Logo from "./Icons/Logo";
 const Header = () => {
   return (
     <Box
-      position="fixed"
-      top="0"
+      position="absolute"
+      top={0}
       display="flex"
       justifyContent="space-between"
       paddingTop="47px"

@@ -38,6 +38,7 @@ const ContactSection = () => {
           fontSize="20px"
           fontWeight={400}
           color="white"
+          _hover={{ cursor: "pointer" }}
         >
           연락하기
         </Box>

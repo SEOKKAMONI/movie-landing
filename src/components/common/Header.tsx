@@ -1,5 +1,5 @@
 import { Box, Flex, Link, Spacer, Text } from "@chakra-ui/react";
-import Logo from "./Icons/Logo";
+import Logo from "../Icons/Logo";
 
 const Header = () => {
   return (

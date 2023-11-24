@@ -1,3 +1,5 @@
+"use client";
+
 import ChakraProvider from "@/providers/ChakraProvider";
 import { ReactNode } from "react";
 

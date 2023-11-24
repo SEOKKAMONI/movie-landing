@@ -3,11 +3,11 @@ import Logo from "./Icons/Logo";
 import Image from "next/image";
 
 const ActivitySection = () => {
-  const [isLagerThan1440] = useMediaQuery("(min-width: 1440px)");
+  const [isLagerThan1920] = useMediaQuery("(min-width: 1920px)");
 
   return (
     <Box
-      display={isLagerThan1440 ? "none" : "flex"}
+      display={isLagerThan1920 ? "flex" : "none"}
       gap="30px"
       justifyContent="center"
       alignItems="center"
